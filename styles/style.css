@@ -29,7 +29,7 @@
   text-decoration: none;
 }
 
-.header__menu-item_active .header__menu-link {
+.header__menu-link_active {
   border: none;
 }
 
@@ -56,6 +56,7 @@
 .contact-info {
   font-weight: 400;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.35;
 }
 
@@ -65,8 +66,9 @@
 }
 
 .contact__link {
-  border-bottom: 1px solid #000;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -171,26 +173,23 @@
 }
 
 .lots-section__card-item {
-    width: 334px;
-    max-width: 100%;
-    min-height: 596px;
-    padding: 48px 40px;
-}
-
-.lots-section__card-item:last-child {
   flex-grow: 1;
+  width: 334px;
+  max-width: 100%;
+  min-height: 596px;
+  padding: 48px 40px;
 }
 
 .card_type_film {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/card-lot-01.jpg") no-repeat center / 165% 100%;
+    url("../images/card-lot-01.jpg") no-repeat center / cover;
 }
 
 .card_type_book {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/card-lot-02.jpg") no-repeat center / 161% 100%;
+    url("../images/card-lot-02.jpg") no-repeat center / cover;
 }
 
 .card_type_picture {
@@ -322,7 +321,7 @@
   text-decoration: none;
 }
 
-.footer__menu-item_active .footer__menu-link {
+.footer__menu-link_active {
   border: none;
 }
 
